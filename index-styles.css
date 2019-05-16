@@ -1,0 +1,23 @@
+/* this is how to add single line comments in css */
+/* the following styles are fit for mobile screens */
+
+.main-header{
+    text-align: center;
+    font-style: italic;
+    border-bottom: 5px double steelblue;
+    box-shadow: 5px 5px 5px black;  
+}
+.second-header{
+    text-align: center;
+    
+}
+.main-footer{
+    text-align: center;
+    border-top: double 5px steelblue;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: purple;
+}
