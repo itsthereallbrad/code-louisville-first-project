@@ -3,11 +3,9 @@
 
 .main-header{
     text-align: center;
-    font-style: italic;
-    border-bottom: 5px double steelblue;
-    box-shadow: 5px 5px 5px black;  
+    border-bottom: 5px double steelblue;  
 }
-.second-header{
+.second-header{ 
     text-align: center;
     
 }
@@ -15,9 +13,39 @@
     text-align: center;
     border-top: double 5px steelblue;
 }
-a:hover{
-    color: red;
+
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
-a:visited{
-    color: purple;
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.title{
+    margin-right: auto;
+}
+/* the following code helps style the nav bar buttons */
+.link-button{
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+/*these css styles help the nav bar lose the anchor tag styles while letting the extra
+links keep the style*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.extra-link{
+    color: blue;
+    text-decoration: underline;
 }
