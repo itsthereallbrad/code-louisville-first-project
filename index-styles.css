@@ -3,7 +3,7 @@
 
 .main-header{
     text-align: center;
-    border-bottom: 5px double steelblue;
+    border-bottom: 5px double #800000;
 }
 .second-header{ 
     text-align: center;
@@ -11,9 +11,8 @@
 }
 .main-footer{
     text-align: center;
-    border-top: double 5px steelblue;
+    border-top: double 5px #800000;
 }
-
 .container{
     width: 90%;
     margin: 0 auto;
@@ -21,25 +20,13 @@
 nav ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
+    list-style:none;
+    margin-right:40px;
 }
-.title{
-    margin-right: auto;
+body{
+    background-color: #B6B6B6;
 }
-/* the following code helps style the nav bar buttons */
-.link-button{
-        background-color: #1c87c9;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-        flex-basis: 125px;
-}
+
 /*these css styles help the nav bar lose the anchor tag styles while letting the extra
 links keep the style*/
 a{
@@ -49,4 +36,38 @@ a{
 .extra-link{
     color: blue;
     text-decoration: underline;
+}
+
+.link-button{
+        background-color: #800000;
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 2px 2px;
+        cursor: pointer;
+        flex-basis: 20%; 
+}
+/*the following css is for the image slideshow on the baked goods page*/
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px;
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+    display: none;
+}
+#slideshow div:nth-child(1){
+    display:contents;
 }
