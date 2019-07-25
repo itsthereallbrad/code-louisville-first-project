@@ -5,10 +5,6 @@
     text-align: center;
     border-bottom: 5px double #800000;
 }
-.second-header{ 
-    text-align: center;
-    
-}
 .main-footer{
     text-align: center;
     border-top: double 5px #800000;
@@ -25,6 +21,7 @@ nav ul{
 }
 body{
     background-color: #B6B6B6;
+    font-size: 15pt;
 }
 
 /*these css styles help the nav bar lose the anchor tag styles while letting the extra
@@ -70,4 +67,81 @@ a{
 }
 #slideshow div:nth-child(1){
     display:contents;
+}
+/*media queries will start now*/
+
+@media (min-width: 766px) {
+    .second-header{
+        text-align: center;
+    }
+    body{
+        font-size: 14pt;
+    }
+    .third-header{
+        text-align:center;
+        text-decoration: underline;
+    }
+    .link-button{
+        background-color: #800000;
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+        flex-basis: 90%; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    margin-right:30px;
+}
+}
+@media (min-width: 1024px){
+    .link-button{
+        background-color: #800000;
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+        flex-basis: 90%; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    margin-right:30px;
+}    
+#slideshow{
+    text-align: center;
+}
+}
+@media (min-width: 1365px){
+    .link-button{
+        background-color: #800000;
+        border: none;
+        color: white;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+        flex-basis: 100%; 
+}
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style:none;
+}   
+#slideshow{
+    text-align: center;
+}
 }
